@@ -95,7 +95,7 @@
 .features .container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 300px;
+  gap: 600px;
 }
 
 .features .container .img {
@@ -156,7 +156,7 @@
   padding-top: var(--main-padding);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 300px;
   padding-bottom: var(--main-padding);
 }
 
@@ -245,9 +245,9 @@
   padding-inline: 50px;
 }
 
-.footer .container .content {
-  grid-template-columns: 1fr; /* Stack footer columns */
-}
+/* .footer .container .content {
+  grid-template-columns: 1fr; 
+} */
 
 .footer .container .content #copy {
   color: hsl(171, 66%, 44%);
@@ -269,50 +269,4 @@
   padding-inline: 15px;
 }
 
-@media (max-width: 1024px) {
-  .features .container,
-  .service .container {
-    grid-template-columns: 1fr; /* Stack elements vertically */
-    gap: 50px;
-  }
-  .service .container .list {
-    grid-template-columns: 1fr; /* Stack items vertically */
-  }
-}
-
-/* For mobile phones */
-@media (max-width: 768px) {
-  .landing .container,
-  .features .container,
-  .access .container,
-  .service .container {
-    flex-direction: column; /* Make elements stack vertically */
-    text-align: center; /* Center align text */
-  }
-
-  .features .container .img,
-  .service .container .list img,
-  .access .container .img img {
-    width: 100%; /* Make images scale with screen */
-    max-width: 100%; /* Ensure images don't overflow */
-    height: auto; /* Maintain aspect ratio */
-  }
-
-  .features .container {
-    gap: 20px; /* Reduce gap between features */
-  }
-
-  .service .container .list {
-    grid-template-columns: 1fr; /* Stack service columns */
-  }
-
-  .footer .container .content {
-    grid-template-columns: 1fr; /* Stack footer columns */
-  }
-
-  .btn-ios,
-  .btn-mac {
-    width: 100%; /* Full width buttons on mobile */
-  }
-}
 /*  End  footer */
