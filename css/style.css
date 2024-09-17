@@ -1,0 +1,318 @@
+/* Variables */
+:root {
+  --main-padding: 60px;
+  --second-padding: 30px;
+  --main-color: #f1f3f5;
+  --second-color: #777;
+}
+
+.nunito- font {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+* {
+  font-family: nunito;
+}
+
+/* Start landing */
+
+.landing {
+  padding-top: var(--main-padding);
+  padding-bottom: var(--main-padding);
+  /* background-color: #f1f3f5; */
+}
+
+.landing .container {
+  background-image: url(C:\Users\USER\Desktop\MyProjects\front-endmonitor\challenge-2\images\bg-header-desktop.jpg);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.landing .container .info h2:first-of-type {
+  font-weight: 800;
+}
+
+.landing .container .info p {
+  color: #777;
+}
+
+.landing .container .btn {
+  padding-top: var(--second-padding);
+  padding-bottom: var(--second-padding);
+}
+
+.landing .container .info .btn .btn-ios {
+  background-color: hsl(171, 66%, 44%);
+  box-shadow: 1px 1px 1px 1px hsl(171, 66%, 44%);
+}
+
+.landing .container .info .btn .btn-mac {
+  background-color: hsl(233, 100%, 69%);
+  box-shadow: 1px 1px 1px 1px hsl(233, 100%, 69%);
+}
+
+.landing .container .info .btn .btn-ios,
+.btn-mac {
+  width: 250px;
+  color: white;
+  border-radius: 25px;
+  border-color: white;
+  height: 50px;
+  font-size: 12px;
+  text-decoration: none;
+  padding-inline: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-inline: 10px;
+}
+
+.landing .container .info .btn .btn-ios:hover,
+.btn-mac:hover {
+  cursor: pointer;
+}
+
+.landing .container .text1 {
+  padding-bottom: var(--main-padding);
+}
+
+.landing .container .text1 p {
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+
+/*  End  landing*/
+
+/* Start Features*/
+.features {
+  padding-top: var(--main-padding);
+  padding-bottom: var(--main-padding);
+}
+
+.features .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 300px;
+}
+
+.features .container .img {
+  margin-left: -40px;
+}
+
+.features .container .row {
+  padding-top: var(--second-padding);
+}
+
+.features .container .row p {
+  color: #777;
+}
+
+/*  End  Features*/
+
+/* Start access*/
+
+.access .container {
+  padding-top: var(--main-padding);
+  padding-bottom: var(--main-padding);
+}
+
+.access .container .info {
+  text-align: center;
+}
+
+.access .container .info p {
+  color: #777;
+}
+
+.access .container .img img {
+  text-align: center;
+}
+
+/*  End  access*/
+
+/* Start service */
+
+.service .container {
+  padding-top: var(--main-padding);
+  padding-bottom: var(--main-padding);
+}
+
+.service .container .text {
+  text-align: center;
+}
+
+.service .container .text h2 {
+  font-size: 32px;
+}
+
+.service .container .text p {
+  color: #777;
+}
+
+.service .container .list {
+  padding-top: var(--main-padding);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding-bottom: var(--main-padding);
+}
+
+.service .container .list .col {
+  text-align: center;
+}
+
+.service .container .list .col p {
+  color: #777;
+}
+
+.service .container .list .col #i {
+  color: #777;
+  font-size: 50px;
+}
+
+.service .container .list-2 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.service .container .list-2 img {
+  padding-top: var(--main-padding);
+  padding-bottom: var(--main-padding);
+  padding-inline: 50px;
+}
+/*  End  service*/
+
+/* Start service-2*/
+.service-2 {
+  padding-top: var(--main-padding);
+  padding-bottom: var(--main-padding);
+}
+
+.service-2 .container .info {
+  text-align: center;
+}
+
+.service-2 .container .btn {
+  padding-top: var(--second-padding);
+  padding-bottom: var(--second-padding);
+}
+
+.service-2 .container .info .btn .btn-ios {
+  background-color: hsl(171, 66%, 44%);
+  box-shadow: 1px 1px 1px 1px hsl(171, 66%, 44%);
+}
+
+.service-2 .container .info .btn .btn-mac {
+  background-color: hsl(233, 100%, 69%);
+  box-shadow: 1px 1px 1px 1px hsl(233, 100%, 69%);
+}
+
+.service-2 .container .info .btn .btn-ios,
+.btn-mac {
+  width: 250px;
+  color: white;
+  border-radius: 25px;
+  border-color: white;
+  /* height: 10px; */
+  font-size: 12px;
+  text-decoration: none;
+  padding-inline: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-inline: 10px;
+}
+
+.service-2 .container .info .btn .btn-ios:hover,
+.btn-mac:hover {
+  cursor: pointer;
+}
+
+/*  End service-2*/
+
+/* Start footer */
+.footer {
+  padding-top: var(--main-padding);
+  background-color: #f1f3f5;
+}
+
+.footer .container .content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding-inline: 50px;
+}
+
+.footer .container .content {
+  grid-template-columns: 1fr; /* Stack footer columns */
+}
+
+.footer .container .content #copy {
+  color: hsl(171, 66%, 44%);
+  font-size: 70px;
+  padding-inline: 45px;
+}
+
+.footer .container .content .links ul li {
+  list-style: none;
+}
+
+.footer .container .content .links ul li a {
+  text-decoration: none;
+  color: var(--second-color);
+}
+
+.footer .container .content .social-media #l {
+  font-size: 25px;
+  padding-inline: 15px;
+}
+
+@media (max-width: 1024px) {
+  .features .container,
+  .service .container {
+    grid-template-columns: 1fr; /* Stack elements vertically */
+    gap: 50px;
+  }
+  .service .container .list {
+    grid-template-columns: 1fr; /* Stack items vertically */
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 768px) {
+  .landing .container,
+  .features .container,
+  .access .container,
+  .service .container {
+    flex-direction: column; /* Make elements stack vertically */
+    text-align: center; /* Center align text */
+  }
+
+  .features .container .img,
+  .service .container .list img,
+  .access .container .img img {
+    width: 100%; /* Make images scale with screen */
+    max-width: 100%; /* Ensure images don't overflow */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .features .container {
+    gap: 20px; /* Reduce gap between features */
+  }
+
+  .service .container .list {
+    grid-template-columns: 1fr; /* Stack service columns */
+  }
+
+  .footer .container .content {
+    grid-template-columns: 1fr; /* Stack footer columns */
+  }
+
+  .btn-ios,
+  .btn-mac {
+    width: 100%; /* Full width buttons on mobile */
+  }
+}
+/*  End  footer */
